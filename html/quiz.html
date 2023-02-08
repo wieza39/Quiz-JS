@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/quiz.css">
+    <title>Quiz Game</title>
+</head>
+
+<body>
+    <div class=".flex-center-container">
+        <!-- TOP-BAR contains basic data, like current game score, player name and his actual best score -->
+        <div class="top-bar">
+            <div class="score-container">
+                <h4>SCORE: </h4>
+                <p id="current-score">0</p>
+            </div>
+            <div class="player-container">
+                <div class="player-data">
+                    <h4>Player: </h4>
+                    <p id="player-name"></p>
+                </div>
+                <div class="player-best">
+                    <p class="player-best-text player-text"></p>
+                    <div class="player-best-score player-text"> </div>
+                </div>
+            </div>
+        </div>
+        <!-- TIMER PART -->
+        <div class="timer">
+            <div class="round-time-bar" data-style="smooth" style="--duration: 5;">
+                <div id="timer-bar"></div>
+            </div>
+        </div>
+        <!-- QUESTIONS PART -->
+        <div class="question-container">
+            <h5 id="question"></h5>
+        </div>
+        <!-- ANSWERS PART -->
+        <div class="answers-container">
+            <div id="answer-btn-container">
+                <!-- FOUR ANSWERS - ONE/MULTI CORRECT & TRUE/FALSE -->
+                <div class="menu-btn answer-btn answer1" id="true" data-number="1"></div>
+                <div class="menu-btn answer-btn answer2" id="false" data-number="2"></div>
+                <div class="menu-btn answer-btn answer3" data-number="3"></div>
+                <div class="menu-btn answer-btn answer4" data-number="4"></div>
+            </div>
+                <!-- ANSWER FROM LIST -->
+                <!-- <select class="drop-down-list">
+                    <option value="answer0">Choose your answer</option>
+                    <option value="answer1"></option>
+                    <option value="answer2"></option>
+                    <option value="answer3"></option>
+                    <option value="answer4"></option>
+                </select> -->
+
+                <!-- SLIDER -->
+                <!-- <div class="slider-container">
+                    <p class="slider-value">My answer: <span id="slidervalue"></span></p>
+                    <input type="range" min="0" max="100" value="50" oninput="slidervalue.innerText = this.value" id="answer-range">
+                    <div class="menu-btn answer-btn answer1"><p class="btn-text">submit</p></div>
+                </div> -->
+
+                <!-- SORT ELEMENTS -->
+                <!-- <div id="sort-list" class="sort-list-container">
+                    <div class="sort-list-item">1</div>
+                    <div class="sort-list-item">2</div>
+                    <div class="sort-list-item">3</div>
+                    <div class="sort-list-item">4</div>
+                    <div class="sort-list-item">5</div>
+                    <div class="sort-list-item">6</div>
+                </div> -->
+
+                <!-- MATCH ELEMENTS -->
+            
+        </div>
+
+    </div>
+    </div>
+    <script src="./../js/quiz.js"></script>
+</body>
+
+</html>

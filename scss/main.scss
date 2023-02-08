@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+@import "start";
+@import "color";
+@import "quiz";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+	color: $font-color;
+}
+
+body {
+	background: $bg-grad;
+
+	.flex-center-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+}
+
+h1 {
+	text-shadow: rgba(60, 69, 56, 0.533) 2px 0 15px;
+}
+
+h3 {
+	font-size: 2.5rem;
+	padding: 5px 0;
+}
+
+h4,
+#current-score,
+#player-name {
+	font-size: 2rem;
+	padding-right: 5px;
+	text-shadow: rgba(60, 69, 56, 0.533) 2px 0 15px;
+}
+
+h5 {
+	font-size: 2rem;
+}
+
+ul, ol {
+	li {
+		padding: 5px 0;
+		text-align: center;
+		list-style: none;
+	}
+}
+
+.text-container {
+	padding: 20px 0;
+	font-size: 1.8rem;
+}
+
+.menu-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 5px;
+	padding: 30px 50px;
+	text-transform: uppercase;
+	font-size: 2rem;
+	text-decoration-line: none;
+	border: 1px solid gray;
+}
+
+.menu-btn:hover,
+.sort-list-item:hover {
+	color: $btn-highlight-font;
+	border: 1px solid $btn-highlight;
+	background-color: $btn-highlight;
+	box-shadow: 0px 0px 7px $btn-highlight;
+	text-shadow: rgba(60, 69, 56, 0.533) 2px 0 15px;
+}
+
+.menu-btn:active,
+.sort-list-item:active {
+	background-color: $btn-highlight-active;
+	box-shadow: inset 8px 4px 10px rgb(32, 114, 41);
+	text-shadow: rgba(60, 69, 56, 0.533) 2px 0 15px;
+	animation-name: button-click;
+	animation-duration: 0.1s;
+	border: none;
+}
+
+@keyframes button-click {
+	0% {box-shadow: inset 0px 0px 0px rgb(32, 114, 41);}
+	100% {box-shadow: inset 8px 4px 10px rgb(32, 114, 41);}
+	100% {border: none;}
+	100% {text-shadow: rgba(60, 69, 56, 0.533) 2px 0 15px;}
+}

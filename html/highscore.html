@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/main.css">
+    <link rel="stylesheet" href="./../css/highscore.css">
+    <title>Quiz Game</title>
+</head>
+
+<body>
+    <div class="flex-center-container">
+        <div class="highscore-container">
+            <h1>TOP 5 HIGHSCORES!</h1>
+            <ol>
+                <li class="score" id="position1">
+                    <div class="text-container">
+                        <p>1. </p>
+                        <p class="highscoreName"></p>
+                        <p class="highscorePoints"></p>
+                    </div>
+                </li>
+                <li class="score" id="position2">
+                    <div class="text-container">
+                        <p>2. </p>
+                        <p class="highscoreName" data-leaderName="2"></p>
+                        <p class="highscorePoints" data-leaderScore="2"></p>
+                    </div>
+                </li>
+
+                <li class="score" id="position3">
+                    <div class="text-container">
+                        <p>3. </p>
+                        <p class="highscoreName" data-leaderName="3"></p>
+                        <p class="highscorePoints" data-leaderScore="3"></p>
+                    </div>
+                </li>
+
+                <li class="score" id="position4">
+                    <div class="text-container">
+                        <p>4. </p>
+                        <p class="highscoreName" data-leaderName="4"></p>
+                        <p class="highscorePoints" data-leaderScore="4"></p>
+                    </div>
+                </li>
+
+                <li class="score" id="position5">
+                    <div class="text-container">
+                        <p>5. </p>
+                        <p class="highscoreName" data-leaderName="5"></p>
+                        <p class="highscorePoints" data-leaderScore="5"></p>
+                    </div>
+                </li>
+
+            </ol>
+        </div>
+
+        <a href="./end.html" class="menu-btn">Go back</a>
+    </div>
+    <script src="./../js/highscore.js"></script>
+</body>
+
+</html>
