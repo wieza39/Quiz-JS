@@ -1,6 +1,7 @@
 # Quiz-JS
 
-Here you can find my project for university subject related with front-end fundamentals. <br>
+&emsp;Here you can find my project for university subject related with front-end fundamentals <img height=20 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" /><img height=20 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+<img height=20 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />.<br>
 Tech-stack I kept raw, so I used plain css and js, without any frameworks. Idea was to understand foundations rather copy solution without reflection. <br>
 <br>
 The main functionalities I provided in this small project are:
